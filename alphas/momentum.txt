@@ -1,0 +1,1 @@
+rank(ts_delta(close, 60))
