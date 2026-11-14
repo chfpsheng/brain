@@ -6,3 +6,6 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# IDE 本地数据（含设备标识）
+.marscode/

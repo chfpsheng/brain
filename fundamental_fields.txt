@@ -1,0 +1,18 @@
+# fundamental6 数据集字段列表（每行一个 field id；# 开头为注释，可随意增删）
+# 用法：在 BRAIN 网页「数据」页找到字段后，把 Field ID 粘到下面新行即可被脚本扫描
+# 注意：模板里 enterprise_value 已固定作分母，无需列在这里；它自身会被自动跳过
+
+# ---- 已确认是 Matrix 类型、可直接做除法的（优先跑） ----
+fnd6_newa2v1300_sale      # Net Sales
+cash                      # Cash
+fnd6_beta                 # Beta
+fnd6_newa1v1300_lo        # Liabilities - Other - Total
+fnd6_ch                   # Cash (另一版本)
+fnd6_cptnewqeventv110_saleq  # Sales/Turnover (Net)
+
+# ---- 以下多为 Vector(事件型)，做除法会报 event-input 错误，脚本会自动记录并跳过 ----
+fnd6_sales
+fnd6_incorp
+fnd6_spis
+fnd6_newqv1300_spiq
+fnd6_newa2v1300_spi
